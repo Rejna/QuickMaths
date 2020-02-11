@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickMaths", "QuickMaths\QuickMaths.csproj", "{633BAC41-F275-4947-B712-75FAA81D4A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickMaths.Test", "QuickMaths.Test\QuickMaths.Test.csproj", "{A36615B4-1512-4CE1-ADE4-5408F4DBE7D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633BAC41-F275-4947-B712-75FAA81D4A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633BAC41-F275-4947-B712-75FAA81D4A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633BAC41-F275-4947-B712-75FAA81D4A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633BAC41-F275-4947-B712-75FAA81D4A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A36615B4-1512-4CE1-ADE4-5408F4DBE7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36615B4-1512-4CE1-ADE4-5408F4DBE7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36615B4-1512-4CE1-ADE4-5408F4DBE7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36615B4-1512-4CE1-ADE4-5408F4DBE7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
