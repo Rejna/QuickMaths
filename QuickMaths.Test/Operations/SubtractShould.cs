@@ -1,10 +1,25 @@
-﻿namespace QuickMaths.Test.Operations
+﻿//-----------------------------------------------------------------------
+// <copyright file="SubtractShould.cs" company="PlaceholderCompany">
+//     Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace QuickMaths.Test.Operations
 {
     using QuickMaths;
     using Xunit;
 
+    /// <summary>
+    /// Unit tests for Subtract operation.
+    /// </summary>
     public class SubtractShould
     {
+        /// <summary>
+        /// Check Subtract operation if returns correct results.
+        /// </summary>
+        /// <param name="operand1">First operand.</param>
+        /// <param name="operand2">Second operand.</param>
+        /// <param name="result">Expected result.</param>
         [Theory]
         [InlineData(1, 2, -1)]
         [InlineData(2, 1, 1)]
