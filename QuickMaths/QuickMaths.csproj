@@ -12,6 +12,10 @@
       <DocumentationFile>bin\Debug\QuickMaths.xml</DocumentationFile>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\QuickMaths.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
       <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
     </ItemGroup>
