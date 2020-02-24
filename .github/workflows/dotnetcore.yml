@@ -13,7 +13,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - name: Build with dotnet
+    - name: Build
       run: dotnet build --configuration Release
-    - name: Test with dotnet
+    - name: Test
       run: dotnet test
+    - name: Publish
+      run: dotnet publish QuickMaths -c Release -o ../artifacts
+    - name: Package
+      run: 7z a -ttar -so QuickMaths.tar ../artifacts | 7z a -si QuickMaths.tar.gz
