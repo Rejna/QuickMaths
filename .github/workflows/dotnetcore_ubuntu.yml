@@ -1,0 +1,30 @@
+name: .NET Core
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Build
+      run: dotnet build src/QuickMaths/QuickMaths.csproj --configuration Release
+    - name: Test
+      run: dotnet test src/QuickMaths.Test/QuickMaths.Test.csproj
+    - name: Publish + Package
+      run: |
+        dotnet publish src/QuickMaths/QuickMaths.csproj -c Release -o artifacts
+        tar -czvf QuickMaths.tar.gz artifacts/
+    - name: Clean
+      run: |
+        rm -rf src/QuickMaths/bin
+        rm -rf src/QuickMaths/obj
+        rm -rf src/QuickMaths.Test/bin
+        rm -rf src/QuickMaths.Test/obj
+        rm -rf artifacts
