@@ -17,10 +17,10 @@ jobs:
       run: dotnet build src/QuickMaths/QuickMaths.csproj --configuration Release
     - name: Test
       run: dotnet test src/QuickMaths.Test/QuickMaths.Test.csproj
-    - name: Publish
-      run: dotnet publish src/QuickMaths/QuickMaths.csproj -c Release -o artifacts
-    - name: Package
-      run: 7z a -ttar -so QuickMaths.tar artifacts | 7z a -si QuickMaths.tar.gz
+    - name: Publish + Package
+      run: |
+        dotnet publish src/QuickMaths/QuickMaths.csproj -c Release -o artifacts
+        7z a -ttar -so QuickMaths.tar artifacts | 7z a -si QuickMaths.tar.gz 
     - name: Clean
       run: |
         rm src/QuickMaths/bin -r -fo
