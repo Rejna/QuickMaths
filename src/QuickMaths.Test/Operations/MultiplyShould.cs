@@ -15,7 +15,7 @@ namespace QuickMaths.Test.Operations
     public class MultiplyShould
     {
         /// <summary>
-        /// Check Multiply operation if returns correct results.
+        /// Check if Multiply operation returns correct results.
         /// </summary>
         /// <param name="operand1">First operand.</param>
         /// <param name="operand2">Second operand.</param>

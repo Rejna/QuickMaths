@@ -15,7 +15,7 @@ namespace QuickMaths.Test.Operations
     public class SubtractShould
     {
         /// <summary>
-        /// Check Subtract operation if returns correct results.
+        /// Check if Subtract operation returns correct results.
         /// </summary>
         /// <param name="operand1">First operand.</param>
         /// <param name="operand2">Second operand.</param>

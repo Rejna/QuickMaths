@@ -43,5 +43,25 @@ namespace QuickMaths
         {
             return a * b;
         }
+
+        /// <summary>
+        /// Squares an integer number.
+        /// </summary>
+        /// <param name="a">First operand.</param>
+        /// <returns>A square of an operand.</returns>
+        public static int Square(int a)
+        {
+            return a * a;
+        }
+
+        /// <summary>
+        /// Calculate absolute value of an integer numbers.
+        /// </summary>
+        /// <param name="a">First operand.</param>
+        /// <returns>Absolute value of an operand.</returns>
+        public static int Abs(int a)
+        {
+            return a >= 0 ? a : -1 * a;
+        }
     }
 }
