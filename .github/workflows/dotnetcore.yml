@@ -22,8 +22,9 @@ jobs:
     - name: Package
       run: 7z a -ttar -so QuickMaths.tar artifacts | 7z a -si QuickMaths.tar.gz
     - name: Clean
-      run: rm -rf src/QuickMaths/bin
-           rm -rf src/QuickMaths/obj
-           rm -rf src/QuickMaths.Test/obj
-           rm -rf src/QuickMaths.Test/bin
-           rm -rf artifacts
+      run: |
+        rm src/QuickMaths/bin -r -fo
+        rm src/QuickMaths/obj -r -fo
+        rm src/QuickMaths.Test/bin -r -fo
+        rm src/QuickMaths.Test/obj -r -fo
+        rm artifacts -r -fo
