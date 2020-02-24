@@ -1,5 +1,6 @@
 .idea
-QuickMaths/bin
-QuickMaths/obj
-QuickMaths.Test/bin
-QuickMaths.Test/obj
+artifacts/
+src/QuickMaths.Test/bin/
+src/QuickMaths.Test/obj/
+src/QuickMaths/bin/
+src/QuickMaths/obj/
