@@ -43,16 +43,5 @@ namespace QuickMaths
         {
             return a * b;
         }
-
-        /// <summary>
-        /// Divides two integer numbers.
-        /// </summary>
-        /// <param name="a">First operand.</param>
-        /// <param name="b">Second operand.</param>
-        /// <returns>Rounded division of operands.</returns>
-        public static int Divide(int a, int b)
-        {
-            return a / b;
-        }
     }
 }
